@@ -1,0 +1,18 @@
+<div class="items">
+  {{#each items}}
+    <div class="item">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="{{album.images.0.url}}" alt="">
+        </div>
+        <div class="col-lg-4">
+          <h2>{{name}}</h2>
+          <h3>{{artists.0.name}}</h3>
+          <audio src="{{preview_url}}" controls>
+            <p>Tu navegador no implementa el elemento audio</p>
+          </audio>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
